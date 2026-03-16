@@ -1,7 +1,10 @@
-USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root           1  0.0  0.2 167280 11360 ?        Ss   Feb13   0:06 /sbin/init
-root        1162  0.0  0.1  15444  8220 ?        Ss   Feb13   0:00 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
-www-data    2182  0.0  0.2  16620 10112 ?        S    03:13   0:00 nginx: worker process
-www-data    2217  0.1  0.4 623188 21228 ?        Sl   03:13   0:00 node /opt/api/server.js
-root        2230  0.0  0.1   8988  4108 ?        S    03:15   0:00 bash /tmp/.backup.sh
-postgres    1409  0.0  0.5 217984 25600 ?        Ss   Feb13   0:01 /usr/lib/postgresql/14/bin/postgres -D /var/lib/postgresql/14/main
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 02:01 ?        00:00:03 /sbin/init
+root        1092       1  0 02:01 ?        00:00:00 /usr/sbin/cron -f
+root        1271       1  0 02:01 ?        00:00:01 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+www-data    2182    1271  0 03:14 ?        00:00:00 nginx: worker process
+root        2241    1092  0 03:18 ?        00:00:00 /bin/sh -c /tmp/.backup.sh
+root        2243    2241  0 03:18 ?        00:00:00 /bin/bash /tmp/.backup.sh
+postgres    11881       1  0 03:20 ?       00:00:00 postgres: api creatorhub 10.10.10.23(54822) idle
+www-data    2299    2182  0 03:22 ?        00:00:00 python3 export.py --format csv
+root        2304       1  0 03:22 ?        00:00:00 /usr/bin/apt-check --human-readable

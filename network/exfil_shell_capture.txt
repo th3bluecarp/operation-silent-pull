@@ -1,0 +1,4 @@
+03:14:23 TCP connection established 10.10.10.23 -> 185.199.110.153:4444
+03:15:01 interactive shell session opened
+03:17:22 file transfer: payload_stage2.sh
+03:35:10 HTTPS POST /upload

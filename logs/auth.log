@@ -3,3 +3,4 @@ Feb 14 03:15:54 api-prod-01 sudo: pam_unix(sudo:session): session opened for use
 Feb 14 03:16:10 api-prod-01 sudo: pam_unix(sudo:session): session closed for user root
 Feb 14 03:19:07 api-prod-01 sshd[2292]: Failed password for invalid user oracle from 91.92.109.126 port 51382 ssh2
 Feb 14 03:22:31 api-prod-01 sudo: root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/bin/chmod +x /tmp/.backup.sh
+Feb 14 03:22:32 api-prod-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)

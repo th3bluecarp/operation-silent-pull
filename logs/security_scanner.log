@@ -1,0 +1,4 @@
+Feb 14 02:50:12 scanner vulnerability scan started
+Feb 14 02:50:14 scanner testing endpoint /export
+Feb 14 02:50:15 scanner payload: ;sleep 5
+Feb 14 02:50:20 scanner completed
