@@ -1,0 +1,7 @@
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+ tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      1162/nginx: master 
+ tcp        0      0 127.0.0.1:8080          0.0.0.0:*               LISTEN      2217/node
+ tcp        0      0 10.10.10.23:54466       185.199.110.153:4444    ESTABLISHED 2230/bash
+ tcp        0      0 10.10.10.23:54822       10.10.10.12:5432        ESTABLISHED 2230/psql
+ tcp        0      0 10.10.10.23:54901       185.199.110.153:443     ESTABLISHED 2230/curl

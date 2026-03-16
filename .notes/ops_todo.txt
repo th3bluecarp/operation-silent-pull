@@ -1,0 +1,3 @@
+- rotate JWT secret after auth01 migration
+- remove legacy www-data sudo exception after exporter rewrite
+- confirm export endpoint moved to safe spawn mode before next release

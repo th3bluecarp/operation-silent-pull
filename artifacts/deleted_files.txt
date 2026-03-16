@@ -1,0 +1,4 @@
+/tmp/u.sql  deleted=2026-02-14T03:22:08Z
+/tmp/c.sql  deleted=2026-02-14T03:22:08Z
+/tmp/p.sql  deleted=2026-02-14T03:22:08Z
+/tmp/.x     deleted=2026-02-14T03:25:54Z

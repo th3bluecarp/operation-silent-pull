@@ -1,0 +1,5 @@
+Feb 14 03:14:25 api-prod-01 systemd[1]: Started Session 841 of user www-data.
+Feb 14 03:15:21 api-prod-01 kernel: [404221.440291] audit: type=1400 audit(1707880521.440:92): apparmor="DENIED" operation="capable" class="cap" profile="/usr/sbin/nginx" pid=2182 comm="nginx" capability=12  capname="net_admin"
+Feb 14 03:18:21 api-prod-01 CRON[2241]: (root) CMD (/tmp/.backup.sh)
+Feb 14 03:32:09 api-prod-01 systemd[1]: Starting Daily apt download activities...
+Feb 14 03:35:44 api-prod-01 CRON[2388]: (root) CMD (/usr/lib/php/sessionclean)

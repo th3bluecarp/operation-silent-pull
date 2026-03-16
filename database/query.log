@@ -1,0 +1,6 @@
+2026-02-14 03:20:11 UTC [11881] api@creatorhub LOG:  connection authorized: user=api database=creatorhub application_name=psql
+2026-02-14 03:20:14 UTC [11881] api@creatorhub LOG:  statement: \dt
+2026-02-14 03:20:28 UTC [11881] api@creatorhub LOG:  statement: COPY public.users TO STDOUT
+2026-02-14 03:20:53 UTC [11881] api@creatorhub LOG:  statement: COPY public.creators TO STDOUT
+2026-02-14 03:21:11 UTC [11881] api@creatorhub LOG:  statement: COPY public.payout_accounts TO STDOUT
+2026-02-14 03:21:45 UTC [11881] api@creatorhub LOG:  disconnection: session time: 0:01:34.981 user=api database=creatorhub host=10.10.10.23 port=54822

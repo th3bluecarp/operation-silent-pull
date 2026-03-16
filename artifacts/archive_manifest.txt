@@ -1,0 +1,5 @@
+/tmp/.cache.tgz
+  u.sql
+  c.sql
+  p.sql
+  sha256=4bbdb834f6d76149dffa3c1f5eb3d969fd4f7b6b70d0c4f0813c6ddad7aeef5e
